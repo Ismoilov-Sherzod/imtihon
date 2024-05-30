@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet</title>
+    <link rel="icon" href="./assets/LOGO (2).png">
+    <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <img src="./assets/navbar.logo.png" alt="">
+                    <ul class="collection">
+                        <select class="collection__item" name="" id="travel">
+                            <option class="" value="">Travelers</option>
+                          </select>
+                    </ul>
+                </div>
+                <ul class="navbar__collection">
+                    <li class="navbar__item"><a href="#slider"><span>Support</span></a></li>
+                    <li class="navbar__item"><a href="#hero"><span><img src="./assets/navbar_launch.png"
+                                    alt="">Language</span></a></li>
+                    <!-- <button>List your property</button> -->
+                </ul>
+                <div class="navbar__foto">
+                    <button>List your property</button>
+                    <img src="./assets/navbar_icon.png" alt="">
+                    <img src="./assets/avatar.png" alt="">
+                </div>
+                <div onclick="toggleShow()" class="navbar__menu">
+                    <span></span>
+                    <span></span>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__content">
+                        <b>Car rentals </b>
+                        <p>Find and book a great experience.</p>
+                        <button>Start your search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="box">
+            <div class="container">
+                <div class="box__block">
+                    <ul class="box__collection">
+                        <li class="box__item">
+                            <a href="#"><span>Stays</span></a>
+                        </li>
+                        <li class="box__item">
+                            <a href="#"><span>Flights</span></a>
+                        </li>
+                        <li class="box__item">
+                            <a href="#"><span>Cars</span></a>
+                        </li>
+                        <li class="box__item">
+                            <a href="#"><span>Things to do</span></a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="box__inp">
+                        <input placeholder=" Return to same location" type="text">
+                        <button>Return to same different location</button>
+                    </div>
+                    <div class="box__content">
+                        <div class="box__text active">
+                            <b> <img src="./assets/box.png" alt="">Pickup location</b>
+                            <p>Where are you?</p>
+
+                        </div>
+                        <div class="box__text activ">
+                            <b> <img src="./assets/box2.png" alt="">Fri, May 11</b>
+                            <p>10:00 AM</p>
+
+                        </div>
+                        <div class="box__text">
+                            <b> <img src="./assets/box2.png" alt="">Tue, May 11</b>
+                            <p>10:00 AM</p>
+                        </div>
+                        <div class="box__search">
+                            <img class="box__img" src="./assets/box1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slider" id="slider">
+            <div class="container__small">
+                <div class="slider__content">
+                    <b>Popular destinations</b>
+                    <p>for car rentals</p>
+                </div>
+                <div class="slider__box">
+                    <button class="slider__btr" id="slider__prev"><img src="./assets/sy,boy.png" alt=""></button>
+                    <div class="slider__wrapper">
+                        <div class="slider__list">
+                            <img src="./assets/slider.png" alt="" class="slider__item">
+                            <p>Paris</p>
+                            <b class="slider__text">Car rentals in 86 pickup locations</b>
+                        </div>
+                        <div class="slider__list">
+                            <img src="./assets/slider2.png" alt="" class="slider__item">
+                            <p>London</p>
+                            <b class="slider__text">Car rentals in 86 pickup locations</b>
+                        </div>
+                        <div class="slider__list">
+                            <img src="./assets/slider3.png" alt="" class="slider__item">
+                            <p>Ams</p>
+                            <b class="slider__text">Car rentals in 86 pickup locations</b>
+                        </div>
+                        <div class="slider__list">
+                            <img src="./assets/slider.png" alt="" class="slider__item">
+                            <p>Paris</p>
+                            <b class="slider__text">Car rentals in 86 pickup locations</b>
+                        </div>
+                        <div class="slider__list">
+                            <img src="./assets/slider.png" alt="" class="slider__item">
+                            <p>Paris</p>
+                            <b class="slider__text">Car rentals in 86 pickup locations</b>
+                        </div>
+                        <div class="slider__list">
+                            <img src="./assets/slider.png" alt="" class="slider__item">
+                            <p>Paris</p>
+                            <b class="slider__text">Car rentals in 86 pickup locations</b>
+                        </div>
+                    </div>
+                    <button class="slider__btr" id="slider__next"><img src="./assets/Line.png" alt=""></button>
+                </div>
+                <div class="slider__scrollbar">
+                    <div class="slider__track">
+                        <div class="slider__thumb">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__button">
+                    <button>Show more ></button>
+                </div>
+            </div>
+        </section>
+        <section class="fleet" id="fleet">
+            <div class="container__small">
+                <div class="fleet__block">
+                    <div class="fleet__content">
+                        <p class="fleet__p">SUPERCHARGE YOUR PLANING POWERS</p>
+                        <b>Rent a car in minutes with Fleet</b>
+                        <p class="fleet__text">Stacks is a production-ready library of stackable content blocks built in
+                            React Native.</p>
+                            <form action="">
+
+                                <div class="fleet__inp">
+                                    <input required aria- placeholder="Enter your phone number" type="number">
+                                    <button><img src="./assets/Line.png" alt=""></button>
+                                </div>
+                            </form>
+                    </div>
+                    <div class="fleet__content">
+                        <img src="./assets/phone mockup.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="nearby" id="nearby">
+            <div class="container__small">
+                <div class="nearby__wrapper">
+                    <div class="nearby__theme">
+                        <b>Explore nearby</b>
+                        <p>for car rentals</p>
+                    </div>
+                    <button><img src="./assets/sy,boy.png" alt=""></button>
+                    <button><img src="./assets/Line.png" alt=""></button>
+                </div>
+                <div class="nearby__box">
+                    <div class="nearby__card">
+                        <img src="./assets/slider.png" alt="" class="slider__item">
+                        <p>London</p>
+                        <b class="slider__text">Car rentals in 86 pickup locations</b>
+                    </div>
+                    <div class="nearby__card">
+                        <img src="./assets/slider2.png" alt="" class="slider__item">
+                        <p>London</p>
+                        <b class="slider__text">Car rentals in 86 pickup locations</b>
+                    </div>
+                    <div class="nearby__card">
+                        <img src="./assets/slider3.png" alt="" class="slider__item">
+                        <p>London</p>
+                        <b class="slider__text">Car rentals in 86 pickup locations</b>
+                    </div>
+                    <div class="nearby__card active">
+                        <img src="./assets/slider3.png" alt="" class="slider__item">
+                        <p>London</p>
+                        <b class="slider__text">Car rentals in 86 pickup locations</b>
+                    </div>
+                    <div class="nearby__card active">
+                        <img src="./assets/slider.png" alt="" class="slider__item">
+                        <p>London</p>
+                        <b class="slider__text">Car rentals in 86 pickup locations</b>
+                    </div>
+                    <div class="nearby__card active">
+                        <img src="./assets/slider3.png" alt="" class="slider__item">
+                        <p>London</p>
+                        <b class="slider__text">Car rentals in 86 pickup locations</b>
+                    </div>
+                    <div class="nearby__card active">
+                        <img src="./assets/slider3.png" alt="" class="slider__item">
+                        <p>London</p>
+                        <b class="slider__text">Car rentals in 86 pickup locations</b>
+                    </div>
+                    <div class="nearby__card active">
+                        <img src="./assets/slider.png" alt="" class="slider__item">
+                        <p>London</p>
+                        <b class="slider__text">Car rentals in 86 pickup locations</b>
+                    </div>
+                    <div class="nearby__card active">
+                        <img src="./assets/slider2.png" alt="" class="slider__item">
+                        <p>London</p>
+                        <b class="slider__text">Car rentals in 86 pickup locations</b>
+                    </div>
+
+                </div>
+                <div class="slider__button btr">
+                    <button>Show more ></button>
+                </div>
+            </div>
+        </section>
+        <section class="amazing" id="amazing">
+            <div class="container__small">
+                <div class="amazing__content">
+                    <p>A CREATIVE AGENCY THAT LEAD AND INSPIRE</p>
+                    <b>Amazing Services</b>
+                    <button>Contact Us</button>
+                </div>
+                <div class="amazing__wrapper">
+                    <div class="amazing__box">
+                        <img src="./assets/amazing.png" alt="">
+                        <p class="amazing__theme">1+M reviewers</p>
+                        <p class="amazing__p">We realize ideas from simple to complex, everything becomes easy to use
+                            and reach the most potential customers.</p>
+                    </div>
+                    <div class="amazing__box">
+                        <img src="./assets/amazing1.png" alt="">
+                        <p class="amazing__theme">24/7 customer service</p>
+                        <p class="amazing__p">We realize ideas from simple to complex, everything becomes easy to use
+                            and reach the most potential customers.</p>
+                    </div>
+                    <div class="amazing__box">
+                        <img src="./assets/amazing2.png" alt="">
+                        <p class="amazing__theme">Free cancellation</p>
+                        <p class="amazing__p">We realize ideas from simple to complex, everything becomes easy to use
+                            and reach the most potential customers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rotashow" id="rotashow">
+            <div class="container__small">
+                <div class="rotashow__wrapper">
+                    <div class="rotashow__box">
+                        <div class="rotashow__card name">
+                            <img src="./assets/rotashow.png" alt="">
+                        </div>
+                        <div class="rotashow__card name actes">
+                            <img src="./assets/rotashow1.png" alt="">
+                        </div>
+                        <div class="rotashow__card activ none name">
+                            <img src="./assets/rotashow2.png" alt="">
+                        </div>
+                        <div class="rotashow__card line name ">
+                            <img src="./assets/rotashow3.png" alt="">
+                        </div>
+                        <div class="rotashow__card line name actes">
+                            <img src="./assets/rotashow4.png" alt="">
+                        </div>
+                        <div class="rotashow__card activ line none name">
+                            <img src="./assets/rotashow5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="asked" id="asked">
+            <div class="container__small">
+                <div class="asked__wrapper">
+                    <b>Frequently asked questions</b>
+                    <div class="asked__btr">
+                        <button>General</button>
+                        <button class="asked__button">Support</button>
+                        <button class="asked__button">Hosting</button>
+                        <button class="asked__button">Product</button>
+                    </div>
+                    <div class="asked__content">
+                        <div class="asked__collection">
+                            <p class="asked__text">01</p>
+                            <p class="asked__p">How does it work?</p>
+                            <img src="./assets/asked.png" alt="">
+                        </div>
+                        <div class="asked__collection">
+                            <p class="asked__text">02</p>
+                            <p class="asked__p">How can i set up a new website?</p>
+                            <img src="./assets/asked.png" alt="">
+                        </div>
+                        <div class="asked__collection">
+                            <p class="asked__text">03</p>
+                            <p class="asked__p">How does it work?</p>
+                            <img src="./assets/asked.png" alt="">
+                        </div>
+                        <div class="asked__collection">
+                            <p class="asked__text">04</p>
+                            <p class="asked__p">How does it work?</p>
+                            <img src="./assets/asked.png" alt="">
+                        </div>
+                        <div class="asked__collection">
+                            <p class="asked__text">05</p>
+                            <p class="asked__p">How does it work?</p>
+                            <img src="./assets/asked.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pikpuk" id="pikpuk">
+            <div class="container__small">
+                <div class="pikpuk__wrapper">
+                    <div class="pikpuk__text">
+                        <b>Recommended pickup locations</b>
+                        <p>A lot of amazing experiences 🏝</p>
+                    </div>
+                    <div class="pikpuk__content">
+                        <div class="pikpuk__box">
+                            <button>128</button>
+                            <div class="pikpuk__car">
+                                <img src="./assets/pikpuk.png" alt="">
+                            </div>
+                            <b>South Virgilland</b>
+                            <p>From Rs. 1,461 per day</p>
+                        </div>
+                        <div class="pikpuk__box">
+                            <button>128</button>
+                            <div class="pikpuk__car">
+                                <img src="./assets/pikpuk.png" alt="">
+                            </div>
+                            <b>South Virgilland</b>
+                            <p>From Rs. 1,461 per day</p>
+                        </div>
+                        <div class="pikpuk__box">
+                            <button>256</button>
+                            <div class="pikpuk__car">
+                                <img src="./assets/pikpuk.png" alt="">
+                            </div>
+                            <b>South Virgilland</b>
+                            <p>From Rs. 1,461 per day</p>
+                        </div>
+                        <div class="pikpuk__box">
+                            <button>128</button>
+                            <div class="pikpuk__car">
+                                <img src="./assets/pikpuk.png" alt="">
+                            </div>
+                            <b>South Virgilland</b>
+                            <p>From Rs. 1,461 per day</p>
+                        </div>
+                        <div class="pikpuk__box">
+                            <button>228</button>
+                            <div class="pikpuk__car">
+                                <img src="./assets/pikpuk.png" alt="">
+                            </div>
+                            <b>South Virgilland</b>
+                            <p>From Rs. 1,461 per day</p>
+                        </div>
+                        <div class="pikpuk__box">
+                            <button>428</button>
+                            <div class="pikpuk__car">
+                                <img src="./assets/pikpuk.png" alt="">
+                            </div>
+                            <b>South Virgilland</b>
+                            <p>From Rs. 1,461 per day</p>
+                        </div>
+                        <div class="pikpuk__box">
+                            <button>238</button>
+                            <div class="pikpuk__car">
+                                <img src="./images/pikpuk.png" alt="">
+                            </div>
+                            <b>South Virgilland</b>
+                            <p>From Rs. 1,461 per day</p>
+                        </div>
+                        <div class="pikpuk__box">
+                            <button>178</button>
+                            <div class="pikpuk__car">
+                                <img src="./assets/pikpuk.png" alt="">
+                            </div>
+                            <b>South Virgilland</b>
+                            <p>From Rs. 1,461 per day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pikpuk__icon">
+                    <img src="./assets/sy,boy.png" alt="">
+                    <img src="./assets/Line.png">
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container__small">
+            <div class="footer__wrapper">
+                <div class="footer__navbar activ active">
+                    <img src="./assets/navbar.logo.png" alt="">
+                </div>
+                <ul class="footer__collection activ">
+                    <li class="footer__item"><a href="#">HOME</a></li>
+                    <li class="footer__item"><a href="#">PROJECT</a></li>
+                </ul>
+                <ul class="footer__collection activ">
+                    <li class="footer__item"><a href="#">What We Do</a></li>
+                    <li class="footer__item"><a href="#">Press</a></li>
+                </ul>
+                <ul class="footer__collection none">
+                    <li class="footer__item"><a href="#">Jobs</a></li>
+                    <li class="footer__item"><a href="#">Download</a></li>
+                </ul>
+                <div class="footer__logo">
+                    <b>Join our community 🔥</b>
+                    <form action="">
+
+                        <div class="footer__inp">
+                            <input required aria- placeholder="Enter your email" type="text">
+                            <button><img src="./assets/Line.png" alt=""></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__suptitle">
+                <p>Copyright © 2021 UI8 LLC. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
+
+
+

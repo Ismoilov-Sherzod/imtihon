@@ -1,0 +1,114 @@
+.amazing{
+    &__content{
+        display: flex;
+        flex-direction: column;
+        // gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 92px;
+        p{
+            font-size: 12px;
+            font-weight: 700;
+            color: #777E90;
+        }
+        b{
+            font-family: popins;
+            font-size: 48px;
+            font-weight: 400;
+            margin-bottom: 40px
+        }
+        button{
+            @include button ();
+            font-size: 16px;
+            font-weight: 900;
+            &:hover{
+                background: dodgerblue;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+    &__wrapper{
+        display: grid;
+        gap: 24px;
+        // font-size: 0;
+        // overflow-x: auto;
+        // scrollbar-width: none;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 136px;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    &__box{
+        width: 357px;
+        height: 320px;
+        border-radius: 20px;
+         background: #F4F5F6;
+        padding: 64px 32px;
+        img{
+            margin-bottom: 32px;
+        }
+    }
+    &__theme{
+        font-size: 12px;
+        font-family: popins;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    &__p{
+        font-size: 16px;
+        font-weight: 500;
+        color: #777E90;
+    }
+}
+
+
+
+@media (max-width:1120px) {
+    .amazing{
+        &__content{
+            b{
+                font-family: popins;
+                font-size: 32px;
+                font-weight: 400;
+                margin-bottom: 30px  
+            }
+        }
+        &__wrapper{
+            display: grid;
+        gap: 24px;
+         font-size: 0;
+         overflow-x: auto;
+         scrollbar-width: none;
+        grid-template-columns: repeat(3, 1fr);
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        }
+    }
+}
+@media (max-width:900px) {
+    .amazing{
+        &__content{
+            b{
+                font-family: popins;
+                font-size: 32px;
+                font-weight: 400;
+                margin-bottom: 30px  
+            }
+        }
+        &__wrapper{
+            display: grid;
+        gap: 24px;
+         font-size: 0;
+         overflow-x: auto;
+         scrollbar-width: none;
+        grid-template-columns: repeat(3, 1fr);
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        }
+    }
+}
+

@@ -1,0 +1,89 @@
+.rotashow{
+    width: 100%;
+    &__wrapper{
+
+            height: 436px;
+            // border: 1px solid red;
+    }
+    &__box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 300px;
+        // border: 1px solid blue;
+        display: flex;
+    }
+    &__card{
+        width:33.33%;
+        padding: 42px 106px 42px 106px;
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+    .activ{
+        border-right: none;
+    }
+    .line{
+        border-bottom: none;
+    }
+}
+
+
+
+
+@media (max-width:990px) {
+
+    .rotashow{
+        &__card{
+            padding: 40px 60px 40px 60px;
+        }
+    }
+}
+@media (max-width:800px) {
+
+    .rotashow{
+        &__card{
+            padding: 28px 30px 28px 30px;
+        }
+    }
+}
+@media (max-width:600px) {
+
+    .rotashow{
+        &__card{
+            width: 50%;
+            padding: 28px 30px 28px 30px;
+        }
+        .none{
+            display: none;
+        }
+        .actes{
+            border-right: none;
+        }
+       
+    }
+}
+@media (max-width:420px) {
+
+    .rotashow{
+        &__card{
+            width: 100%;
+            padding: 0 72px 25px 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center ;
+        }
+        .activ{
+             border-right: 1px solid #ddd;
+        }
+        .none{
+            display: none;
+        }
+        .name{
+            border-right: none;
+        }
+        .line{
+            border-bottom: 1px solid #ddd;
+        }
+       
+    }
+}

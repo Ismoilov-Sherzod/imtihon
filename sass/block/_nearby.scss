@@ -1,0 +1,109 @@
+.nearby{
+    width: 100%;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        button{
+            width: 40px;
+            height: 40px;
+            background: #000;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            margin-left: 20px;
+            &:hover{
+                background: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+    &__theme{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        b{
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .nearby{
+        &__wrapper{
+            button{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        &__theme{
+            b{
+                font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+    
+}
+.nearby{
+    &__box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    &__card{
+        width: calc(33.33% - 21.33px);
+        p{
+            font-size: 24px;
+            font-family: popins;
+            font-weight: 400;
+            margin-top: 21px;
+        }
+    }
+    .btr{
+        margin-bottom: 138px;
+    }
+}
+@media (max-width:650px) {
+    .nearby{
+       &__box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+       }
+        &__card{
+            width: calc(33.33% - 21.33px);
+            p{
+                font-size: 20px;
+                font-family: popins;
+                font-weight: 300;
+                margin-top: 21px;
+            }
+        }
+       
+    }
+}
+@media (max-width:420px) {
+    .nearby{
+        &__box{
+            display: flex;
+            // flex-wrap: wrap;
+        }
+        &__card{
+            width: 100%;
+        }
+        .active{
+            display: none;
+        }
+    }
+}
